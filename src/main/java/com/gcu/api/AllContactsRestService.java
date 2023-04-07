@@ -24,6 +24,7 @@ public class AllContactsRestService {
 	{
 		try
 		{
+			//Get all contacts 
 			List<ContactModel> orders = service.getClients();
 			if(orders == null)
 				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
